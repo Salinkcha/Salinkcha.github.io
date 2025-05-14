@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohammed Soumaré | Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <div class="nav-container">
+                <div class="logo">MS</div>
+                <ul>
+                    <li><button class="nav-btn active" data-target="home">Home</button></li>
+                    <li><button class="nav-btn" data-target="projects">Projects</button></li>
+                    <li><button class="nav-btn" data-target="contact">Contact</button></li>
+                </ul>
+                <div class="toggle-cont">
+                    <input class="toggle-input" id="toggle" name="toggle" type="checkbox" />
+                    <label class="toggle-label" for="toggle">
+                        <div class="cont-icon">
+                            <!-- Icône SVG simplifiée -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454z"/>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content-container">
+            <!-- Home Section -->
+            <section id="home" class="page active-page">
+                <div class="hero">
+                    <h1>Mohammed Soumaré</h1>
+                    <p class="subtitle">Full-Stack Developer</p>
+                    <div class="hero-buttons">
+                        <button class="btn primary" data-target="projects">View Projects</button>
+                        <button class="btn secondary" data-target="contact">Contact Me</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="page">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- PROJECT 1 - Edit image/description here -->
+                    <div class="card">
+                        <img src="image.video/Forum.jpg" alt="Forum: Aniverse" style="width:100%; height:300px; object-fit:cover;">                    <div class="card__content">
+                        <p class="card__title"> Forum: Aniverse</p>
+                        <p class="card__description"> Création et animation d’un forum communautaire autour des mangas et de la culture geek. Participation à la gestion technique, la modération et l’organisation d’événements en ligne.</p>
+                        <button class="card__button" onclick="window.location.href='https://github.com/Salinkcha/forum-go'">View on GitHub</button>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- PROJECT 2 - Edit image/description here -->
+                    <div class="card">
+                        <img src="image.video/pacman.jpg" alt="Pac-Man" style="width:100%; height:200px; object-fit:cover;">
+                        <div class="card__content">
+                        <p class="card__title">Pacman</p>
+                        <p class="card__description">Development of a customized version of Pac-Man as part of a programming project. Management of moves, scores and ghost AI. Project focused on logic, algorithms and creativity.</p>
+                        <button class="card__button" onclick="window.location.href='https://github.com/Salinkcha/Pac-Man'">View on GitHub</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image.video/rolex-racing-tycoon.jpg" alt="Rolex Racing Tycoon" style="width:100%; height:200px; object-fit:cover;">
+                        <div class="card__content">
+                            <p class="card__title">Rolex Racing Tycoon</p>
+                            <p class="card__description">A racing tycoon game developed in Roblox Studio during a collaborative challenge with students from partner schools.</p>
+                            <button class="card__button" onclick="window.location.href='https://www.roblox.com/games/98819646411922/Rolex-Racing-Tycoon#!'">View on Roblox</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="page">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <!-- EDIT YOUR CONTACT INFO HERE -->
+                        <p><i class="fas fa-envelope"></i> mohammedsoumare25@gmail.com</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+
+
+    
